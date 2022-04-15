@@ -1,6 +1,7 @@
 use bevy::prelude::*;
 use itertools::Itertools;
 use rand::prelude::*;
+use std::convert::TryFrom;
 
 const TILE_SIZE: f32 = 40.0;
 const TILE_SPACER: f32 = 10.0;
@@ -65,12 +66,77 @@ struct Position {
 
 struct TileText;
 
+struct FontSpec {
+    family: Handle<Font>,
+}
+
+impl FromWorld for FontSpec {
+    fn from_world(world: &mut World) -> Self {
+        let asset_server = world
+            .get_resource_mut::<AssetServer>()
+            .unwrap();
+
+        FontSpec {
+            family: asset_server
+                .load("fonts/FiraSans-Bold.ttf"),
+        }
+    }
+}
+
+enum BoardShift {
+    Left,
+    Right,
+    Up,
+    Down,
+}
+
+impl TryFrom<&KeyCode> for BoardShift {
+    type Error = &'static str;
+
+    fn try_from(
+        value: &KeyCode,
+    ) -> Result<Self, Self::Error> {
+        match value {
+            KeyCode::Left => Ok(BoardShift::Left),
+            KeyCode::Up => Ok(BoardShift::Up),
+            KeyCode::Right => Ok(BoardShift::Right),
+            KeyCode::Down => Ok(BoardShift::Down),
+            _ => Err("not a valid board_shift key"),
+        }
+    }
+}
+
+fn board_shift(input: Res<Input<KeyCode>>) {
+    let shift_direction =
+        input.get_just_pressed().find_map(|key_code| {
+            BoardShift::try_from(key_code).ok()
+        });
+
+    match shift_direction {
+        Some(BoardShift::Left) => {
+            dbg!("left");
+        }
+        Some(BoardShift::Right) => {
+            dbg!("right");
+        }
+        Some(BoardShift::Up) => {
+            dbg!("up");
+        }
+        Some(BoardShift::Down) => {
+            dbg!("down");
+        }
+        None => (),
+    }
+}
+
 fn main() {
     App::build()
         .add_plugins(DefaultPlugins)
         .init_resource::<Materials>()
+        .init_resource::<FontSpec>()
         .add_startup_system(setup.system())
         .add_startup_system(spawn_board.system())
+        .add_system(board_shift.system())
         .add_startup_system_to_stage(
             StartupStage::PostStartup,
             spawn_tiles.system(),
@@ -129,6 +195,7 @@ fn spawn_tiles(
     mut commands: Commands,
     materials: Res<Materials>,
     query_board: Query<&Board>,
+    font_spec: Res<FontSpec>,
 ) {
     let board = query_board
         .single()
@@ -159,8 +226,11 @@ fn spawn_tiles(
                 child_builder
                     .spawn_bundle(Text2dBundle {
                         text: Text::with_section(
-                            "2",
+                            "4",
                             TextStyle {
+                                font: font_spec
+                                    .family
+                                    .clone(),
                                 font_size: 40.0,
                                 color: Color::BLACK,
                                 ..Default::default()
@@ -171,6 +241,9 @@ fn spawn_tiles(
                                 horizontal:
                                     HorizontalAlign::Center,
                             },
+                        ),
+                        transform: Transform::from_xyz(
+                            0.0, 0.0, 1.0,
                         ),
                         ..Default::default()
                     })
