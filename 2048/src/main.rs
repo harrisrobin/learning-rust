@@ -1,4 +1,4 @@
-use bevy::prelude::*;
+use bevy::{ecs::entity, prelude::*};
 use itertools::Itertools;
 use rand::prelude::*;
 use std::convert::TryFrom;
@@ -106,6 +106,21 @@ impl TryFrom<&KeyCode> for BoardShift {
     }
 }
 
+fn render_tile_points(
+    mut texts: Query<&mut Text, With<TileText>>,
+    tiles: Query<(&Points, &Children)>,
+) {
+    for (points, children) in tiles.iter() {
+        if let Some(entity) = children.first() {
+            let mut text = texts
+                .get_mut(*entity)
+                .expect("expected Text to exist");
+            let mut text_section = text.sections.first_mut().expect("expect first section to be a accessible as mutable");
+            text_section.value = points.value.to_string()
+        }
+    }
+}
+
 fn board_shift(input: Res<Input<KeyCode>>) {
     let shift_direction =
         input.get_just_pressed().find_map(|key_code| {
@@ -137,6 +152,7 @@ fn main() {
         .add_startup_system(setup.system())
         .add_startup_system(spawn_board.system())
         .add_system(board_shift.system())
+        .add_system(render_tile_points.system())
         .add_startup_system_to_stage(
             StartupStage::PostStartup,
             spawn_tiles.system(),
@@ -226,7 +242,7 @@ fn spawn_tiles(
                 child_builder
                     .spawn_bundle(Text2dBundle {
                         text: Text::with_section(
-                            "4",
+                            "2",
                             TextStyle {
                                 font: font_spec
                                     .family
