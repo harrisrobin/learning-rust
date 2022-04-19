@@ -1,1 +1,1 @@
-dDeploying a database with PlanetScale
+Getting the PlanetScale connection string from an environment variable and handling errors with color_eyre

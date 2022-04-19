@@ -1,4 +1,6 @@
+mod db;
 mod pokemon_csv;
+use db::*;
 use pokemon_csv::*;
 
 fn main() -> Result<(), csv::Error> {
@@ -7,7 +9,9 @@ fn main() -> Result<(), csv::Error> {
     )?;
     for result in rdr.deserialize() {
         let record: PokemonCsv = result?;
-        println!("{:?}", record);
+        let pokemon_row: PokemonTableRow = record.into();
+        println!("{:?}", pokemon_row);
     }
+    dbg!(PokemonId::new());
     Ok(())
 }

@@ -1,0 +1,11 @@
+/Users/harris/workspace/courses/rust-adventure/planetscale-csv-upload/target/debug/deps/digest-caaf4877dfb6d6f0.rmeta: /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/lib.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/ct_variable.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/rt_variable.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/wrapper.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/xof_reader.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/digest.rs
+
+/Users/harris/workspace/courses/rust-adventure/planetscale-csv-upload/target/debug/deps/digest-caaf4877dfb6d6f0.d: /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/lib.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/ct_variable.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/rt_variable.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/wrapper.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/xof_reader.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/digest.rs
+
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/lib.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/ct_variable.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/rt_variable.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/wrapper.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/core_api/xof_reader.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/digest-0.10.3/src/digest.rs:
