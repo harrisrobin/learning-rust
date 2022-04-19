@@ -1,0 +1,14 @@
+/Users/harris/workspace/courses/rust-adventure/planetscale-csv-upload/target/debug/deps/csv-b4ec8019453e17d0.rmeta: /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/lib.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/byte_record.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/cookbook.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/deserializer.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/error.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/reader.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/serializer.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/string_record.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/tutorial.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/writer.rs
+
+/Users/harris/workspace/courses/rust-adventure/planetscale-csv-upload/target/debug/deps/csv-b4ec8019453e17d0.d: /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/lib.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/byte_record.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/cookbook.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/deserializer.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/error.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/reader.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/serializer.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/string_record.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/tutorial.rs /Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/writer.rs
+
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/lib.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/byte_record.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/cookbook.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/deserializer.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/error.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/reader.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/serializer.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/string_record.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/tutorial.rs:
+/Users/harris/.cargo/registry/src/github.com-1ecc6299db9ec823/csv-1.1.6/src/writer.rs:

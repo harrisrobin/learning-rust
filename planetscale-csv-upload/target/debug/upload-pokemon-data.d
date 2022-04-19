@@ -1,0 +1,1 @@
+/Users/harris/workspace/courses/rust-adventure/planetscale-csv-upload/target/debug/upload-pokemon-data: /Users/harris/workspace/courses/rust-adventure/planetscale-csv-upload/crates/upload-pokemon-data/src/main.rs /Users/harris/workspace/courses/rust-adventure/planetscale-csv-upload/crates/upload-pokemon-data/src/pokemon_csv.rs
